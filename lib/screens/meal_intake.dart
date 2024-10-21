@@ -109,23 +109,23 @@ class BesserEsser extends StatelessWidget {
                                     border: Border.all(
                                       color: state is MealIntakeReadonly
                                           ? Colors.transparent
-                                          : Color(0xff9aa19e),
+                                          : const Color(0xff9aa19e),
                                     ),
                                     borderRadius: BorderRadius.circular(4)),
                                 child: Wrap(
                                   crossAxisAlignment: WrapCrossAlignment.center,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.calendar_today_outlined,
                                       color: Color(0xff49b38a),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 7,
                                     ),
                                     Text(
                                       state.date != null ? '${state.date!.month}-${state.date!.day.toString()}' : '',
                                       style:
-                                          TextStyle(color: Color(0xff49b38a)),
+                                          const TextStyle(color: Color(0xff49b38a)),
                                     )
                                   ],
                                 ),
@@ -153,7 +153,7 @@ class BesserEsser extends StatelessWidget {
                                     border: Border.all(
                                       color: state is MealIntakeReadonly
                                           ? Colors.transparent
-                                          : Color(0xff9aa19e),
+                                          : const Color(0xff9aa19e),
                                     ),
                                     borderRadius: BorderRadius.circular(4)),
                                 child: Wrap(
@@ -253,7 +253,7 @@ class BesserEsser extends StatelessWidget {
                                     showDragHandle: true,
                                     builder: (context) {
                                       return Container(
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                             horizontal: 20),
                                         child: BlocBuilder<MealIntakeCubit,
                                             MealIntakeState>(
@@ -394,7 +394,7 @@ class BesserEsser extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   Visibility(
                     visible: state is MealIntakeEdit,
                     child: Container(
@@ -407,7 +407,7 @@ class BesserEsser extends StatelessWidget {
                             color: const Color(0xff9aa19e),
                           ),
                           borderRadius: BorderRadius.circular(4),
-                        color: Color(0xff49b38a)
+                        color: const Color(0xff49b38a)
                       ),
                       child: const Center(
                         child: Wrap(

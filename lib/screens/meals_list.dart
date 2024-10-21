@@ -17,28 +17,28 @@ class MealsList extends StatelessWidget {
         time: const TimeOfDay(hour: 19, minute: 0),
         expanded: true,
         note: 'Christmas dinner with family',
-        ingredients: ['Turkey', 'Mashed Potatoes', 'Gravy', 'Cranberry Sauce'],
+        ingredients: const ['Turkey', 'Mashed Potatoes', 'Gravy', 'Cranberry Sauce'],
       ),
       MealIntakeReadonly(
         date: DateTime(2024, 11, 24), // Thanksgiving lunch
         time: TimeOfDay(hour: 13, minute: 0),
         expanded: false,
         note: 'Thanksgiving lunch with friends',
-        ingredients: ['Roast Turkey', 'Stuffing', 'Pumpkin Pie'],
+        ingredients: const ['Roast Turkey', 'Stuffing', 'Pumpkin Pie'],
       ),
       MealIntakeReadonly(
         date: DateTime(2024, 10, 31), // Halloween snack
         time: TimeOfDay(hour: 16, minute: 30),
         expanded: true,
         note: 'Halloween snack party',
-        ingredients: ['Candy', 'Chocolate Bars', 'Cupcakes'],
+        ingredients: const ['Candy', 'Chocolate Bars', 'Cupcakes'],
       ),
       MealIntakeReadonly(
         date: DateTime(2024, 7, 4), // Independence Day BBQ
         time: TimeOfDay(hour: 18, minute: 0),
         expanded: false,
         note: 'BBQ party with neighbors',
-        ingredients: ['Grilled Chicken', 'Corn on the Cob', 'Potato Salad'],
+        ingredients: const ['Grilled Chicken', 'Corn on the Cob', 'Potato Salad'],
       ),
     ];
 

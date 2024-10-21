@@ -19,18 +19,12 @@ abstract class MealIntakeState {
 
 final class MealIntakeReadonly extends MealIntakeState {
   const MealIntakeReadonly({
-    DateTime? date,
-    TimeOfDay? time,
-    bool? expanded,
-    String? note,
-    List<String>? ingredients,
-  }) : super(
-    date: date,
-    time: time,
-    expanded: expanded,
-    note: note,
-    ingredients: ingredients,
-  );
+    super.date,
+    super.time,
+    super.expanded,
+    super.note,
+    super.ingredients,
+  });
 
   MealIntakeReadonly copyWith({
     DateTime? date,
@@ -53,18 +47,12 @@ final class MealIntakeEdit extends MealIntakeState {
   final List<String>? suggestions;
   const MealIntakeEdit({
     this.suggestions,
-    DateTime? date,
-    TimeOfDay? time,
-    bool? expanded,
-    String? note,
-    List<String>? ingredients,
-  }) : super(
-    date: date,
-    time: time,
-    expanded: expanded,
-    note: note,
-    ingredients: ingredients,
-  );
+    super.date,
+    super.time,
+    super.expanded,
+    super.note,
+    super.ingredients,
+  });
 
   MealIntakeEdit copyWith({
     DateTime? date,
