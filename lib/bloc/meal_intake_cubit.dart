@@ -1,10 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 part 'meal_intake_state.dart';
 
 class MealIntakeCubit extends Cubit<MealIntakeState> {
-  MealIntakeCubit() : super(MealIntakeEdit());
+  MealIntakeCubit() : super(const MealIntakeEdit());
 
   void setDate(DateTime date) {
     emit((state as MealIntakeEdit).copyWith(date: date));

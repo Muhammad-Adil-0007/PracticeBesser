@@ -14,7 +14,7 @@ class MyChip extends StatelessWidget {
           horizontal: MediaQuery.of(context).size.width * 0.02,
           vertical: MediaQuery.of(context).size.width * 0.014),
       decoration: BoxDecoration(
-        color: Color(0xff49b38a).withOpacity(0.8),
+        color: const Color(0xff49b38a).withOpacity(0.8),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Row(
@@ -24,7 +24,7 @@ class MyChip extends StatelessWidget {
             text,
             style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.03),
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
           Visibility(
